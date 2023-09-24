@@ -1,0 +1,44 @@
+.container{
+    background-color: #000000;
+    height: 500px;
+}
+
+h1{
+    font-size: 35px;
+    color: #66fcf1;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+input{
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+    border: 2px solid #45a29e;
+    background-color: black;
+    color: #66fcf1;
+
+}
+button{
+    height: 2.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid #45a29e;
+    color: #66fcf1;
+    background-color: #000000;
+}
+button:hover{
+    color: #45a29e;
+    box-shadow: 1px 1px #66fcf1;
+
+}
+.wrapper{
+    text-align: center;
+}
+ul{
+}
+ul li{
+    list-style-type: none;
+    color: #66fcf1;
+    font-size: 2rem;
+}

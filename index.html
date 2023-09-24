@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo-list</title>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+	<script type="text/typescript" src="todo.ts"></script>
+</head>
+<body>
+	<div class="container">
+<h1>{{title}} </h1>
+<div class="wrapper">
+<input type="text" placeholder="Enter new task" #task>
+<button (click)="addTask(task.value)">Add Task</button>
+<ul *ngFor="let item of list">
+  <li>{{item.name}} 
+    <button style="padding-right: 10px;" (click)="removeTask(item.id)">Remove</button>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>
