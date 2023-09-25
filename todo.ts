@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+interface Task {
+  id: number;
+  name: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -7,14 +10,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Todo-list';
-  list:any[]=[];
-  addTask(item:string){
-    this.list.push({id:this.list.length,name:item})
-    console.warn(this.list)
-  }
-  removeTask(id:number){
-    console.warn(id)
-    this.list=this.list.filter(item=>item.id!==id)
+  list: Task[] = [];
 
+  addTask(item: string): void {
+    this.list.push({ id: this.list.length, name: item });
+    console.warn(this.list);
+  }
+
+  removeTask(id: number): void {
+    console.warn(id);
+    this.list = this.list.filter(item => item.id !== id);
   }
 }
